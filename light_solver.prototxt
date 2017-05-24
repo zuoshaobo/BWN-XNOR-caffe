@@ -1,0 +1,15 @@
+net: "lightcnn/Binary_LightenedCNN_B_train_test.prototxt"
+test_iter: 100
+test_interval: 1000
+base_lr: 0.00000001
+lr_policy: "step"
+gamma: 0.1
+stepsize:  200000
+display: 20
+max_iter: 990000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 500000
+snapshot_prefix: "l_sony_"
+solver_mode: GPU
+solver_type: ADAM
